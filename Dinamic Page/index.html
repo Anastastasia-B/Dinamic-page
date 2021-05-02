@@ -1,0 +1,65 @@
+	<!DOCTYPE html>
+	<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width,  initial-scale=1.0" />
+		<meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<link rel="stylesheet" href="css/style.css" />
+		<link rel="stylesheet" href="css/owfont-regular.css">
+		<link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@600&display=swap" rel="stylesheet">
+		<title>Welcome</title>
+	</head>
+	<body>
+		<div class="container">
+			<div class="top__container">
+				<h3 id="date"></h3>
+				<div class="weather_wrapper">
+					<div id="city_error" style="display:none;"></div>
+					<div id="weather" style="display:none;">
+						<div class="weather_main">
+							<i class="weather_icon owf-5x"></i>
+							<span class="temperature"></span>
+						</div>
+						<p class="weather_description"></p>
+						<div>
+							<span class="humidity"></span>
+							<span class="wind_speed"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="center__container">
+				<time id="time"></time>
+				<h1>
+					<span id="greeting"></span>
+					<span id="myname" contenteditable="true"></span>
+				</h1>
+
+				<h2>
+					What Is Your Focus For Today?
+					<p id="focus" contenteditable="true"></p>
+				</h2>
+			</div>
+
+
+			<div class="bottom__container">
+				<button class="next_image"></button>
+				<div class="quote__container">
+					<blockquote></blockquote>
+					<button class="next_quote"></button>
+				</div>
+				<div class="city__container">
+					<p class="city" contenteditable="true"></p> 
+					<div class="city__img"></div>
+				</div>
+				
+			</div>
+			
+			<div id="overlay"></div>
+		</div>
+		
+		
+
+		<script src="js/main.js"></script>
+	</body>
+	</html>
